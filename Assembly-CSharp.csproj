@@ -48,6 +48,8 @@
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
      <None Include="Assets\Asset Packs\Survival Carbine\Thanks To Michael.txt" />
     <Reference Include="UnityEngine">

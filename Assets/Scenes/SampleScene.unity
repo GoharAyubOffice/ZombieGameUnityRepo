@@ -4355,6 +4355,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 423171650}
+    - target: {fileID: 883127888, guid: 7ce89bfffbdf32c478461d67162d9e1a, type: 3}
+      propertyPath: turnSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1785429521, guid: 7ce89bfffbdf32c478461d67162d9e1a, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 423171650}
     - target: {fileID: 365434840797346415, guid: 7ce89bfffbdf32c478461d67162d9e1a, type: 3}
       propertyPath: m_Name
       value: Enemy
