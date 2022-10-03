@@ -31,6 +31,10 @@ public class EnemyAI : MonoBehaviour
             isProvoked = true;
         }
     }
+    public void OnDamageTaken()
+    {
+        isProvoked = true;
+    }
     private void EngageTarget()
     {
         RotateFacetoTarget();
