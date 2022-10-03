@@ -8,10 +8,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] Transform FPCamera;
     [SerializeField] float range = 100f;
     float damage = 30f;
-
     [SerializeField] ParticleSystem muzzleFlash;
-
     [SerializeField] GameObject hitEffect;
+    [SerializeField] Ammo ammoSlots;
     private void Update()
     {
         if(Input.GetButtonDown("Fire1"))
