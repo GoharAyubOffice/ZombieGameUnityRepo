@@ -1343,14 +1343,6 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 597205486}
-    - target: {fileID: 4077495680436592249, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: cameraFPS
-      value: 
-      objectReference: {fileID: 734957142}
-    - target: {fileID: 4701386556379536406, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: hitEffect
-      value: 
-      objectReference: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!4 &423171650 stripped
@@ -2292,11 +2284,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 365434840797346419, guid: 7ce89bfffbdf32c478461d67162d9e1a, type: 3}
   m_PrefabInstance: {fileID: 727948018}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &734957142 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  m_PrefabInstance: {fileID: 423171649}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &745386781
 PrefabInstance:
@@ -7548,7 +7535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 883127888, guid: 7ce89bfffbdf32c478461d67162d9e1a, type: 3}
       propertyPath: chaseRange
-      value: 11.73
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1785429521, guid: 7ce89bfffbdf32c478461d67162d9e1a, type: 3}
       propertyPath: damage
