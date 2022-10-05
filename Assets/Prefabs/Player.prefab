@@ -376,7 +376,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a3473471c83dd4e8d8d1a8714679d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 30
+  - ammoType: 1
+    ammoAmount: 20
+  - ammoType: 2
+    ammoAmount: 8
 --- !u!1 &4963329972842771389
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0471d9087de734c9b4d705939cebc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWeapon: 1
+  currentWeapon: 0
 --- !u!1001 &1393910753782482168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -443,6 +449,10 @@ PrefabInstance:
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 400000}
+    - target: {fileID: 5937578672277018862, guid: ea03e79aa6dc88d449951b207ffe4662, type: 3}
+      propertyPath: ammoType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5937578672277018862, guid: ea03e79aa6dc88d449951b207ffe4662, type: 3}
       propertyPath: ammoSlots
       value: 
@@ -619,6 +629,10 @@ PrefabInstance:
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 400000}
+    - target: {fileID: 5937578672277018862, guid: 3bb4b85245966664aaf8e90d07f96f1b, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5937578672277018862, guid: 3bb4b85245966664aaf8e90d07f96f1b, type: 3}
       propertyPath: ammoSlots
       value: 
