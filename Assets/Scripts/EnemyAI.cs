@@ -12,14 +12,22 @@ public class EnemyAI : MonoBehaviour
     public float turnSpeed = 5f;
     NavMeshAgent navMeshAgent;
     float DistanceToTarget = Mathf.Infinity;
+
+    public EnemyHealth health;
     
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
     }
     void Update()
     {
+        if(health.IsDead())
+        {
+            enabled = false;
+            navMeshAgent.enabled = false;
+        }
         DistanceToTarget = Vector3.Distance(target.position,transform.position);
 
         if(isProvoked)
