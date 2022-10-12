@@ -6,13 +6,12 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] Transform target;
     [SerializeField] float chaseRange = 15f;
     [SerializeField] bool isProvoked = false;
     public float turnSpeed = 5f;
     NavMeshAgent navMeshAgent;
     float DistanceToTarget = Mathf.Infinity;
-
+    Transform target;
     public EnemyHealth health;
     
 
@@ -20,6 +19,7 @@ public class EnemyAI : MonoBehaviour
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();
+        target = FindObjectOfType<PlayerHealth>().transform;
     }
     void Update()
     {

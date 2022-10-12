@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Weapon : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlots;
     [SerializeField] AmmoType ammoType;
+
+    [SerializeField] TextMeshProUGUI ammoText;
     public bool canShoot = true;
 
     [SerializeField] float timeBetweenShots = 0.5f;
@@ -20,13 +23,23 @@ public class Weapon : MonoBehaviour
     {
         canShoot = true;
     }
+
     private void Update()
     {
+        DisplayAmmoText();
+
         if(Input.GetMouseButtonDown(0) && canShoot == true)
         {
         StartCoroutine(Shoot());
         }
     }
+
+    private void DisplayAmmoText()
+    {
+        int currenAmmo = ammoSlots.GetCurrentAmmo(ammoType);
+        ammoText.text = currenAmmo.ToString();
+    }
+
     IEnumerator Shoot()
     {
         canShoot = false;
